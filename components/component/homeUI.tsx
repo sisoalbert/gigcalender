@@ -11,6 +11,8 @@ import {
 } from "@/components/ui/card";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { JSX, SVGProps } from "react";
+import Image from "next/image";
 
 export function HomeUI() {
   return (
@@ -202,7 +204,7 @@ export function HomeUI() {
             </div>
           </div>
           <CardContent className="p-4">
-            <img
+            <Image
               alt="Concert"
               className="aspect-video overflow-hidden rounded-lg object-cover"
               height="300"
@@ -225,10 +227,10 @@ export function HomeUI() {
               The Summer Music Festival is an annual event that brings together
               the best music, food, and fun. Join us for a day of amazing
               performances by top artists. Whether you love pop, rock, or
-              hip-hop, you'll find something to groove to at the Summer Music
-              Festival. In addition to the great music, there will be plenty of
-              delicious food and refreshing drinks available. So come on down
-              and enjoy the music!
+              hip-hop, you&#39;ll find something to groove to at the Summer
+              Music Festival. In addition to the great music, there will be
+              plenty of delicious food and refreshing drinks available. So come
+              on down and enjoy the music!
             </p>
           </CardContent>
         </Card>
@@ -237,7 +239,7 @@ export function HomeUI() {
   );
 }
 
-function SearchIcon(props) {
+function SearchIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -257,7 +259,9 @@ function SearchIcon(props) {
   );
 }
 
-function CalendarIcon(props) {
+function CalendarIcon(
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) {
   return (
     <svg
       {...props}
@@ -279,7 +283,7 @@ function CalendarIcon(props) {
   );
 }
 
-function ClockIcon(props) {
+function ClockIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -299,7 +303,7 @@ function ClockIcon(props) {
   );
 }
 
-function MapPinIcon(props) {
+function MapPinIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -319,7 +323,9 @@ function MapPinIcon(props) {
   );
 }
 
-function DollarSignIcon(props) {
+function DollarSignIcon(
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) {
   return (
     <svg
       {...props}
